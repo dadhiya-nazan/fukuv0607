@@ -4,8 +4,10 @@ namespace fukuv0607
 {
     public partial class Form1 : Form
     {
+
         double vx = -4;
         double vy = -4;
+        int t;
         public Form1()
         {
             InitializeComponent();
@@ -30,12 +32,12 @@ namespace fukuv0607
                 vx = -(1.5 * vx);
                 label1.Text = "ç∂îºêgí…Ç¢";
             }
-            else if (label1.Top > 400)
+            else if (label1.Top + label1.Height > ClientSize.Height)
             {
                 vy = -(1.5 * vy);
                 label1.Text = "ë´í…Ç¢";
             }
-            else if (label1.Left > 700)
+            else if (label1.Left + label1.Width > ClientSize.Width)
             {
                 vx = -(1.5 * vx);
                 label1.Text = "âEîºêgí…Ç¢";
@@ -50,6 +52,15 @@ namespace fukuv0607
         {
             timer1.Enabled = false;
             label1.Text = "í∑˙±óNìl";
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
