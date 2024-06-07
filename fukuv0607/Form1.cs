@@ -20,22 +20,22 @@ namespace fukuv0607
         {
             label1.Left += (int)vx;
             label1.Top += (int)vy;
-            if (label1.Top <= 0)
+            if (label1.Top < 0)
             {
                 vy = -(1.5 * vy);
                 label1.Text = "ì™í…Ç¢";
             }
-            else if (label1.Left <= 0)
+            else if (label1.Left < 0)
             {
-                vx = -(1.5 *vx);
+                vx = -(1.5 * vx);
                 label1.Text = "ç∂îºêgí…Ç¢";
             }
-            else if (label1.Top >= 410)
+            else if (label1.Top > 400)
             {
                 vy = -(1.5 * vy);
                 label1.Text = "ë´í…Ç¢";
             }
-            else if (label1.Left >= 700)
+            else if (label1.Left > 700)
             {
                 vx = -(1.5 * vx);
                 label1.Text = "âEîºêgí…Ç¢";
