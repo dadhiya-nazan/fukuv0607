@@ -4,8 +4,8 @@ namespace fukuv0607
 {
     public partial class Form1 : Form
     {
-        int vx = -4;
-        int vy = -4;
+        double vx = -4;
+        double vy = -4;
         public Form1()
         {
             InitializeComponent();
@@ -18,23 +18,27 @@ namespace fukuv0607
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Left += vx;
-            label1.Top += vy;
+            label1.Left += (int)vx;
+            label1.Top += (int)vy;
             if (label1.Top <= 0)
             {
-                vy = -vy;
+                vy = -(1.5 * vy);
+                label1.Text = "ì™í…Ç¢";
             }
             else if (label1.Left <= 0)
             {
-                vx = -vx;
+                vx = -(1.5 *vx);
+                label1.Text = "ç∂îºêgí…Ç¢";
             }
             else if (label1.Top >= 410)
             {
-                vy = -vy;
+                vy = -(1.5 * vy);
+                label1.Text = "ë´í…Ç¢";
             }
             else if (label1.Left >= 700)
             {
-                vx = -vx;
+                vx = -(1.5 * vx);
+                label1.Text = "âEîºêgí…Ç¢";
             }
             else
             {
