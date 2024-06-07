@@ -24,22 +24,22 @@ namespace fukuv0607
             label1.Top += (int)vy;
             if (label1.Top < 0)
             {
-                vy = -(1.5 * vy);
+                vy = -(1.1 * vy);
                 label1.Text = "ì™í…Ç¢";
             }
             else if (label1.Left < 0)
             {
-                vx = -(1.5 * vx);
+                vx = -(1.1 * vx);
                 label1.Text = "ç∂îºêgí…Ç¢";
             }
             else if (label1.Top + label1.Height > ClientSize.Height)
             {
-                vy = -(1.5 * vy);
+                vy = -(1.1 * vy);
                 label1.Text = "ë´í…Ç¢";
             }
             else if (label1.Left + label1.Width > ClientSize.Width)
             {
-                vx = -(1.5 * vx);
+                vx = -(1.1 * vx);
                 label1.Text = "âEîºêgí…Ç¢";
             }
             else
