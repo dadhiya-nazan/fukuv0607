@@ -26,13 +26,13 @@ namespace fukuv0607
             }
             else if (label1.Left <= 0)
             {
-                vx =  -vx ;
+                vx = -vx;
             }
-            else if (label1.Top >= 430)
+            else if (label1.Top >= 410)
             {
-                vy = -vy;    
+                vy = -vy;
             }
-            else if(label1.Left >= 456)
+            else if (label1.Left >= 700)
             {
                 vx = -vx;
             }
